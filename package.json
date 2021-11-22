@@ -38,7 +38,7 @@
   },
   "dependencies": {
     "@stdlib/ndarray-base-buffer-dtype": "^0.0.x",
-    "@stdlib/ndarray-dtypes": "^0.0.x",
+    "@stdlib/ndarray-base-dtype-str2enum": "^0.0.x",
     "@stdlib/types": "^0.0.x"
   },
   "devDependencies": {
@@ -46,6 +46,7 @@
     "@stdlib/assert-is-number": "^0.0.x",
     "@stdlib/bench": "^0.0.x",
     "@stdlib/ndarray-base-buffer-ctors": "^0.0.x",
+    "@stdlib/ndarray-dtypes": "^0.0.x",
     "tape": "git+https://github.com/kgryte/tape.git#fix/globby",
     "istanbul": "^0.4.1",
     "tap-spec": "5.x.x"

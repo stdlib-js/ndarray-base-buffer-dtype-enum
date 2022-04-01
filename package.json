@@ -1,0 +1,41 @@
+{
+  "name": "@stdlib/ndarray-base-buffer-dtype-enum",
+  "version": "0.0.0",
+  "description": "Return the data type enumeration constant of an ndarray data buffer.",
+  "license": "Apache-2.0",
+  "main": "./bundle.js",
+  "homepage": "https://stdlib.io",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/stdlib-js/ndarray-base-buffer-dtype-enum.git"
+  },
+  "bugs": {
+    "url": "https://github.com/stdlib-js/stdlib/issues"
+  },
+  "keywords": [
+    "stdlib",
+    "stdtypes",
+    "types",
+    "base",
+    "ndarray",
+    "dtypes",
+    "dtype",
+    "data",
+    "enum",
+    "enumeration",
+    "constant",
+    "const",
+    "buffer",
+    "buf",
+    "multidimensional",
+    "array",
+    "utilities",
+    "utility",
+    "utils",
+    "util"
+  ],
+  "funding": {
+    "type": "patreon",
+    "url": "https://www.patreon.com/athan"
+  }
+}

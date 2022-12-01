@@ -34,14 +34,30 @@ limitations under the License.
 
 <!-- Package usage documentation. -->
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/ndarray-base-buffer-dtype-enum
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
+-   If you are using Deno, visit the [`deno` branch][deno-url].
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-import dtypeEnum from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-base-buffer-dtype-enum@deno/mod.js';
+var dtypeEnum = require( '@stdlib/ndarray-base-buffer-dtype-enum' );
 ```
 
 #### dtypeEnum( buffer )
@@ -49,7 +65,7 @@ import dtypeEnum from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-base-buffer
 Returns the [data type][@stdlib/ndarray/dtypes] enumeration constant of an ndarray data [`buffer`][@stdlib/ndarray/base/buffer-ctors].
 
 ```javascript
-import Float64Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-float64@deno/mod.js';
+var Float64Array = require( '@stdlib/array-float64' );
 var buf = new Float64Array( 10 );
 
 var c = dtypeEnum( buf );
@@ -88,10 +104,10 @@ var c = dtypeEnum( 'beep' );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-import dtypes from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-dtypes@deno/mod.js';
-import bufferCtors from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-base-buffer-ctors@deno/mod.js';
-import isFunction from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-function@deno/mod.js';
-import dtypeEnum from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-base-buffer-dtype-enum@deno/mod.js';
+var dtypes = require( '@stdlib/ndarray-dtypes' );
+var bufferCtors = require( '@stdlib/ndarray-base-buffer-ctors' );
+var isFunction = require( '@stdlib/assert-is-function' );
+var dtypeEnum = require( '@stdlib/ndarray-base-buffer-dtype-enum' );
 
 var DTYPES;
 var ctor;
@@ -155,7 +171,7 @@ console.log( '%s => %s', 'generic', c );
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
@@ -215,9 +231,9 @@ Copyright &copy; 2016-2022. The Stdlib [Authors][stdlib-authors].
 
 [stdlib-license]: https://raw.githubusercontent.com/stdlib-js/ndarray-base-buffer-dtype-enum/main/LICENSE
 
-[@stdlib/ndarray/dtypes]: https://github.com/stdlib-js/ndarray-dtypes/tree/deno
+[@stdlib/ndarray/dtypes]: https://github.com/stdlib-js/ndarray-dtypes
 
-[@stdlib/ndarray/base/buffer-ctors]: https://github.com/stdlib-js/ndarray-base-buffer-ctors/tree/deno
+[@stdlib/ndarray/base/buffer-ctors]: https://github.com/stdlib-js/ndarray-base-buffer-ctors
 
 </section>
 

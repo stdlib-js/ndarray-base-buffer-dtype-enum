@@ -39,7 +39,8 @@
   "dependencies": {
     "@stdlib/ndarray-base-buffer-dtype": "^0.1.0",
     "@stdlib/ndarray-base-dtype-str2enum": "^0.1.0",
-    "@stdlib/types": "^0.1.0"
+    "@stdlib/types": "^0.1.0",
+    "@stdlib/error-tools-fmtprodmsg": "^0.1.0"
   },
   "devDependencies": {
     "@stdlib/assert-is-function": "^0.1.0",

@@ -20,7 +20,7 @@
 
 // MODULES //
 
-var bench = require( '@stdlib/bench' );
+var bench = require( '@stdlib/bench-harness' );
 var dtypes = require( '@stdlib/ndarray-dtypes' );
 var bufferCtors = require( '@stdlib/ndarray-base-buffer-ctors' );
 var isNumber = require( '@stdlib/assert-is-number' ).isPrimitive;

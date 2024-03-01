@@ -44,7 +44,7 @@
   "devDependencies": {
     "@stdlib/assert-is-function": "^0.2.1",
     "@stdlib/assert-is-number": "^0.2.1",
-    "@stdlib/ndarray-base-buffer-ctors": "^0.2.0",
+    "@stdlib/ndarray-base-buffer-ctors": "^0.2.1",
     "@stdlib/ndarray-dtypes": "^0.2.1",
     "tape": "git+https://github.com/kgryte/tape.git#fix/globby",
     "istanbul": "^0.4.1",

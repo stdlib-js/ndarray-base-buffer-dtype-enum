@@ -1,6 +1,6 @@
 {
   "name": "@stdlib/ndarray-base-buffer-dtype-enum",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "Return the data type enumeration constant of an ndarray data buffer.",
   "license": "Apache-2.0",
   "author": {
@@ -38,18 +38,18 @@
   },
   "dependencies": {
     "@stdlib/ndarray-base-buffer-dtype": "^0.2.1",
-    "@stdlib/ndarray-base-dtype-str2enum": "^0.2.1",
+    "@stdlib/ndarray-base-dtype-str2enum": "^0.2.2",
     "@stdlib/types": "^0.3.2"
   },
   "devDependencies": {
-    "@stdlib/assert-is-function": "^0.2.1",
-    "@stdlib/assert-is-number": "^0.2.1",
+    "@stdlib/assert-is-function": "^0.2.2",
+    "@stdlib/assert-is-number": "^0.2.2",
     "@stdlib/ndarray-base-buffer-ctors": "^0.2.1",
-    "@stdlib/ndarray-dtypes": "^0.2.1",
+    "@stdlib/ndarray-dtypes": "^0.3.0",
     "tape": "git+https://github.com/kgryte/tape.git#fix/globby",
     "istanbul": "^0.4.1",
     "tap-min": "git+https://github.com/Planeshifter/tap-min.git",
-    "@stdlib/bench-harness": "^0.2.1"
+    "@stdlib/bench-harness": "^0.2.2"
   },
   "engines": {
     "node": ">=0.10.0",

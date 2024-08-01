@@ -37,14 +37,14 @@
     "url": "https://github.com/stdlib-js/stdlib/issues"
   },
   "dependencies": {
-    "@stdlib/ndarray-base-buffer-dtype": "^0.2.1",
+    "@stdlib/ndarray-base-buffer-dtype": "^0.3.0",
     "@stdlib/ndarray-base-dtype-str2enum": "^0.2.2",
     "@stdlib/types": "^0.3.2"
   },
   "devDependencies": {
     "@stdlib/assert-is-function": "^0.2.2",
     "@stdlib/assert-is-number": "^0.2.2",
-    "@stdlib/ndarray-base-buffer-ctors": "^0.2.1",
+    "@stdlib/ndarray-base-buffer-ctors": "^0.3.0",
     "@stdlib/ndarray-dtypes": "^0.3.0",
     "tape": "git+https://github.com/kgryte/tape.git#fix/globby",
     "istanbul": "^0.4.1",

@@ -38,10 +38,11 @@
   },
   "dependencies": {
     "@stdlib/ndarray-base-buffer-dtype": "^0.3.0",
-    "@stdlib/ndarray-base-dtype-str2enum": "^0.2.2",
+    "@stdlib/ndarray-base-dtype-resolve-enum": "^0.2.2",
     "@stdlib/types": "^0.4.3"
   },
   "devDependencies": {
+    "@stdlib/array-struct-factory": "github:stdlib-js/array-struct-factory#main",
     "@stdlib/assert-is-function": "^0.2.2",
     "@stdlib/assert-is-number": "^0.2.2",
     "@stdlib/ndarray-base-buffer-ctors": "^0.3.0",

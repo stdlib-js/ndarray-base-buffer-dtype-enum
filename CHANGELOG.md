@@ -2,6 +2,50 @@
 
 > Package changelog.
 
+<section class="release" id="unreleased">
+
+## Unreleased (2025-09-19)
+
+<section class="features">
+
+### Features
+
+-   [`ae21126`](https://github.com/stdlib-js/stdlib/commit/ae2112615cd460c39161a41c32d18b7ab600c885) - add support for struct arrays
+
+</section>
+
+<!-- /.features -->
+
+<section class="commits">
+
+### Commits
+
+<details>
+
+-   [`ae21126`](https://github.com/stdlib-js/stdlib/commit/ae2112615cd460c39161a41c32d18b7ab600c885) - **feat:** add support for struct arrays _(by Athan Reines)_
+
+</details>
+
+</section>
+
+<!-- /.commits -->
+
+<section class="contributors">
+
+### Contributors
+
+A total of 1 person contributed to this release. Thank you to this contributor:
+
+-   Athan Reines
+
+</section>
+
+<!-- /.contributors -->
+
+</section>
+
+<!-- /.release -->
+
 <section class="release" id="v0.2.2">
 
 ## 0.2.2 (2024-07-29)

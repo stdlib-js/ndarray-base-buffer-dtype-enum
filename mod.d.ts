@@ -1,4 +1,4 @@
-/**
+/*
 * @license Apache-2.0
 *
 * Copyright (c) 2021 The Stdlib Authors.
@@ -16,21 +16,17 @@
 * limitations under the License.
 */
 
-'use strict';
+// TypeScript Version: 4.1
 
-// MODULES //
+/// <reference types="https://cdn.jsdelivr.net/gh/stdlib-js/types@main/index.d.ts"/>
 
-var resolveEnum = require( '@stdlib/ndarray-base-dtype-resolve-enum' );
-var dtype = require( '@stdlib/ndarray-base-buffer-dtype' );
-
-
-// MAIN //
+import { Collection } from '@stdlib/types/array';
 
 /**
 * Returns the data type enumeration constant for a provided ndarray data buffer.
 *
-* @param {Collection} arr - ndarray data buffer
-* @returns {(integer|null)} data type enumeration constant or null
+* @param arr - strided array
+* @returns data type enumeration constant or null
 *
 * @example
 * var Float64Array = require( '@stdlib/array-float64' );
@@ -40,15 +36,9 @@ var dtype = require( '@stdlib/ndarray-base-buffer-dtype' );
 * var c = dtypeEnum( x );
 * // returns <number>
 */
-function dtypeEnum( arr ) {
-	var dt = dtype( arr );
-	if ( dt ) {
-		return resolveEnum( dt );
-	}
-	return null;
-}
+declare function dtypeEnum( arr: Collection ): number | null;
 
 
 // EXPORTS //
 
-module.exports = dtypeEnum;
+export = dtypeEnum;

@@ -45,43 +45,37 @@ limitations under the License.
 
 <!-- Package usage documentation. -->
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/ndarray-base-buffer-dtype-enum
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm`][esm-url] branch (see [README][esm-readme]).
+-   If you are using Deno, visit the [`deno`][deno-url] branch (see [README][deno-readme] for usage intructions).
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd`][umd-url] branch (see [README][umd-readme]).
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+To view installation and usage instructions specific to each branch build, be sure to explicitly navigate to the respective README files on each branch, as linked to above.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
-To use in Observable,
-
 ```javascript
-dtypeEnum = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-base-buffer-dtype-enum@umd/browser.js' )
-```
-
-To vendor stdlib functionality and avoid installing dependency trees for Node.js, you can use the UMD server build:
-
-```javascript
-var dtypeEnum = require( 'path/to/vendor/umd/ndarray-base-buffer-dtype-enum/index.js' )
-```
-
-To include the bundle in a webpage,
-
-```html
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-base-buffer-dtype-enum@umd/browser.js"></script>
-```
-
-If no recognized module system is present, access bundle contents via the global scope:
-
-```html
-<script type="text/javascript">
-(function () {
-    window.dtypeEnum;
-})();
-</script>
+var dtypeEnum = require( '@stdlib/ndarray-base-buffer-dtype-enum' );
 ```
 
 #### dtypeEnum( buffer )
 
-Returns the [data type][@stdlib/ndarray/dtypes] enumeration constant of an ndarray data [`buffer`][@stdlib/ndarray/base/buffer-ctors].
+Returns the [data type][@stdlib/ndarray/dtypes] enumeration constant of an ndarray data [buffer][@stdlib/ndarray/base/buffer-ctors].
 
 ```javascript
 var Float64Array = require( '@stdlib/array-float64' );
@@ -91,7 +85,7 @@ var c = dtypeEnum( buf );
 // returns <number>
 ```
 
-If provided an ndarray data [`buffer`][@stdlib/ndarray/base/buffer-ctors] having an unknown or unsupported [data type][@stdlib/ndarray/dtypes], the function returns `null`.
+If provided an ndarray data [buffer][@stdlib/ndarray/base/buffer-ctors] having an unknown or unsupported [data type][@stdlib/ndarray/dtypes], the function returns `null`.
 
 ```javascript
 var c = dtypeEnum( 'beep' );
@@ -122,53 +116,30 @@ var c = dtypeEnum( 'beep' );
 
 <!-- eslint no-undef: "error" -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-dtypes@umd/browser.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-base-buffer-ctors@umd/browser.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-function@umd/browser.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-base-buffer-dtype-enum@umd/browser.js"></script>
-<script type="text/javascript">
-(function () {
-
-var DTYPES;
-var ctor;
-var buf;
-var len;
-var c;
-var i;
+```javascript
+var dtypes = require( '@stdlib/ndarray-dtypes' );
+var bufferCtors = require( '@stdlib/ndarray-base-buffer-ctors' );
+var dtypeEnum = require( '@stdlib/ndarray-base-buffer-dtype-enum' );
 
 // Get a list of supported ndarray buffer data types:
-DTYPES = dtypes();
+var DTYPES = dtypes( 'integer_and_generic' );
 
 // Buffer length:
-len = 10;
+var len = 10;
 
 // For each supported data type, create a buffer and retrieve its data type enumeration constant...
+var ctor;
+var i;
 for ( i = 0; i < DTYPES.length; i++ ) {
     ctor = bufferCtors( DTYPES[ i ] );
-    if ( DTYPES[ i ] === 'binary' && isFunction( ctor.alloc ) ) {
-        buf = ctor.alloc( len );
-    } else {
-        buf = new ctor( len );
-    }
-    c = dtypeEnum( buf );
-    console.log( '%s => %d', DTYPES[ i ], c );
+    console.log( '%s => %d', DTYPES[ i ], dtypeEnum( new ctor( len ) ) );
 }
 
 // Try an array-like object...
-buf = {
-    'length': 10
+var buf = {
+    'length': len
 };
-c = dtypeEnum( buf );
-console.log( '%s => %s', 'generic', c );
-
-})();
-</script>
-</body>
-</html>
+console.log( '%s => %s', 'generic', dtypeEnum( buf ) );
 ```
 
 </section>
@@ -263,9 +234,9 @@ Copyright &copy; 2016-2025. The Stdlib [Authors][stdlib-authors].
 
 [stdlib-license]: https://raw.githubusercontent.com/stdlib-js/ndarray-base-buffer-dtype-enum/main/LICENSE
 
-[@stdlib/ndarray/dtypes]: https://github.com/stdlib-js/ndarray-dtypes/tree/umd
+[@stdlib/ndarray/dtypes]: https://github.com/stdlib-js/ndarray-dtypes
 
-[@stdlib/ndarray/base/buffer-ctors]: https://github.com/stdlib-js/ndarray-base-buffer-ctors/tree/umd
+[@stdlib/ndarray/base/buffer-ctors]: https://github.com/stdlib-js/ndarray-base-buffer-ctors
 
 </section>
 

@@ -46,6 +46,8 @@
     "@stdlib/assert-is-function": "^0.2.2",
     "@stdlib/assert-is-number": "^0.2.2",
     "@stdlib/ndarray-base-buffer-ctors": "^0.3.0",
+    "@stdlib/ndarray-base-dtype-enums": "github:stdlib-js/ndarray-base-dtype-enums#main",
+    "@stdlib/ndarray-base-dtypes2strings": "github:stdlib-js/ndarray-base-dtypes2strings#main",
     "@stdlib/ndarray-dtypes": "^0.3.0",
     "tape": "git+https://github.com/kgryte/tape.git#fix/globby",
     "istanbul": "^0.4.1",

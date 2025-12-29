@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-09-19)
+## Unreleased (2025-12-29)
 
 <section class="features">
 
@@ -22,6 +22,7 @@
 
 <details>
 
+-   [`6c010ed`](https://github.com/stdlib-js/stdlib/commit/6c010ede1bf09077f25b1340c6874ac11bf16b08) - **test:** fix broken tests _(by Athan Reines)_
 -   [`ae21126`](https://github.com/stdlib-js/stdlib/commit/ae2112615cd460c39161a41c32d18b7ab600c885) - **feat:** add support for struct arrays _(by Athan Reines)_
 
 </details>

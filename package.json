@@ -39,7 +39,8 @@
   "dependencies": {
     "@stdlib/ndarray-base-buffer-dtype": "^0.3.0",
     "@stdlib/ndarray-base-dtype-resolve-enum": "^0.2.2",
-    "@stdlib/types": "^0.4.3"
+    "@stdlib/types": "^0.4.3",
+    "@stdlib/error-tools-fmtprodmsg": "^0.2.2"
   },
   "devDependencies": {
     "@stdlib/array-struct-factory": "github:stdlib-js/array-struct-factory#main",

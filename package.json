@@ -1,6 +1,6 @@
 {
   "name": "@stdlib/ndarray-base-buffer-dtype-enum",
-  "version": "0.2.2",
+  "version": "0.3.0",
   "description": "Return the data type enumeration constant of an ndarray data buffer.",
   "license": "Apache-2.0",
   "author": {
@@ -38,7 +38,7 @@
   },
   "dependencies": {
     "@stdlib/ndarray-base-buffer-dtype": "^0.3.0",
-    "@stdlib/ndarray-base-dtype-resolve-enum": "^0.2.2",
+    "@stdlib/ndarray-base-dtype-resolve-enum": "^0.3.0",
     "@stdlib/types": "^0.4.3"
   },
   "devDependencies": {
@@ -46,8 +46,8 @@
     "@stdlib/assert-is-function": "^0.2.2",
     "@stdlib/assert-is-number": "^0.2.2",
     "@stdlib/ndarray-base-buffer-ctors": "^0.3.0",
-    "@stdlib/ndarray-base-dtype-enums": "github:stdlib-js/ndarray-base-dtype-enums#main",
-    "@stdlib/ndarray-base-dtypes2strings": "github:stdlib-js/ndarray-base-dtypes2strings#main",
+    "@stdlib/ndarray-base-dtype-enums": "^0.1.0",
+    "@stdlib/ndarray-base-dtypes2strings": "^0.1.0",
     "@stdlib/ndarray-dtypes": "^0.3.0",
     "tape": "git+https://github.com/kgryte/tape.git#fix/globby",
     "istanbul": "^0.4.1",
@@ -91,7 +91,6 @@
     "utils",
     "util"
   ],
-  "__stdlib__": {},
   "funding": {
     "type": "opencollective",
     "url": "https://opencollective.com/stdlib"

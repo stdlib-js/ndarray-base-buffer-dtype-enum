@@ -52,7 +52,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import dtypeEnum from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-base-buffer-dtype-enum@esm/index.mjs';
+import dtypeEnum from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-base-buffer-dtype-enum@v0.3.0-esm/index.mjs';
 ```
 
 #### dtypeEnum( buffer )
@@ -106,7 +106,7 @@ var c = dtypeEnum( 'beep' );
 
 import dtypes from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-dtypes@esm/index.mjs';
 import bufferCtors from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-base-buffer-ctors@esm/index.mjs';
-import dtypeEnum from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-base-buffer-dtype-enum@esm/index.mjs';
+import dtypeEnum from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-base-buffer-dtype-enum@v0.3.0-esm/index.mjs';
 
 // Get a list of supported ndarray buffer data types:
 var DTYPES = dtypes( 'integer_and_generic' );

@@ -39,7 +39,8 @@
   "dependencies": {
     "@stdlib/ndarray-base-buffer-dtype": "^0.4.0",
     "@stdlib/ndarray-base-dtype-resolve-enum": "^0.3.1",
-    "@stdlib/types": "^0.4.3"
+    "@stdlib/types": "^0.4.3",
+    "@stdlib/error-tools-fmtprodmsg": "^0.2.3"
   },
   "devDependencies": {
     "@stdlib/array-struct-factory": "^0.1.0",

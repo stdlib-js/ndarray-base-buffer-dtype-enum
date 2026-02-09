@@ -37,18 +37,18 @@
     "url": "https://github.com/stdlib-js/stdlib/issues"
   },
   "dependencies": {
-    "@stdlib/ndarray-base-buffer-dtype": "^0.4.0",
+    "@stdlib/ndarray-base-buffer-dtype": "^0.4.1",
     "@stdlib/ndarray-base-dtype-resolve-enum": "^0.3.1",
     "@stdlib/types": "^0.4.3"
   },
   "devDependencies": {
-    "@stdlib/array-struct-factory": "^0.1.0",
+    "@stdlib/array-struct-factory": "^0.1.1",
     "@stdlib/assert-is-function": "^0.2.3",
     "@stdlib/assert-is-number": "^0.2.3",
-    "@stdlib/ndarray-base-buffer-ctors": "^0.4.0",
+    "@stdlib/ndarray-base-buffer-ctors": "^0.4.1",
     "@stdlib/ndarray-base-dtype-enums": "^0.1.1",
     "@stdlib/ndarray-base-dtypes2strings": "^0.1.1",
-    "@stdlib/ndarray-dtypes": "^0.4.0",
+    "@stdlib/ndarray-dtypes": "^0.4.1",
     "tape": "git+https://github.com/kgryte/tape.git#fix/globby",
     "istanbul": "^0.4.1",
     "tap-min": "git+https://github.com/Planeshifter/tap-min.git",
